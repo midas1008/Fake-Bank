@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fausse Banque avec Mots de Passe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bienvenue à la Fausse Banque</h1>
+    <div id="message"></div>
+
+    <!-- Création d'un compte -->
+    <h2>Créer un compte</h2>
+    <form id="createAccountForm">
+        <input type="text" id="accountName" placeholder="Nom du titulaire" required>
+        <input type="number" id="initialBalance" placeholder="Solde initial" required>
+        <input type="password" id="accountPassword" placeholder="Mot de passe" required>
+        <button type="submit">Créer un compte</button>
+    </form>
+
+    <!-- Liste des comptes -->
+    <h2>Liste des comptes</h2>
+    <div id="accountsList"></div>
+
+    <!-- Opérations (Dépôt, Retrait, Virement) -->
+    <h2>Opérations</h2>
+
+    <!-- Dépôt -->
+    <form id="depositForm">
+        <input type="text" id="depositId" placeholder="Identifiant du compte" required>
+        <input type="password" id="depositPassword" placeholder="Mot de passe" required>
+        <input type="number" id="depositAmount" placeholder="Montant à déposer" required>
+        <button type="submit">Déposer</button>
+    </form>
+
+    <!-- Retrait -->
+    <form id="withdrawForm">
+        <input type="text" id="withdrawId" placeholder="Identifiant du compte" required>
+        <input type="password" id="withdrawPassword" placeholder="Mot de passe" required>
+        <input type="number" id="withdrawAmount" placeholder="Montant à retirer" required>
+        <button type="submit">Retirer</button>
+    </form>
+
+    <!-- Virement -->
+    <form id="transferForm">
+        <input type="text" id="sourceId" placeholder="Identifiant du compte source" required>
+        <input type="password" id="sourcePassword" placeholder="Mot de passe du compte source" required>
+        <input type="text" id="destinationId" placeholder="Identifiant du compte destinataire" required>
+        <input type="number" id="transferAmount" placeholder="Montant à transférer" required>
+        <button type="submit">Effectuer un virement</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+     

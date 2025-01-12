@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #007BFF;
+}
+
+form {
+    margin: 10px auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    font-weight: bold;
+    color: green;
+    margin: 10px 0;
+}
+
+#accountsList {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 10px auto;
+    text-align: left;
+}
